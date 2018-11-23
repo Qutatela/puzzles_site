@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>გამოცანა</title>
+</head>
+<body>
+  <div class="">
+    <a href="../index.html"><button class="btn1" type="button" name="button">მთავარი</button></a>
+    <img src="../image/gif.gif" alt="">
+    <div class="div">
+      <h3 id="txt">მინდვრად რწყილივით დახტოდა<br>
+ერთი უკუდო კატაო,<br>
+რაც საკუდეზე დააკლდა,<br>
+ყურებზე მიემატაო.<br>
+ცხვირსახოცს თავი გამოვსკვენ,<br>
+კედელზე დაიხატაო.<br>
+და ვინცა ვერ გამოიცნობს,<br>
+სჩანს ჭკუამ უღალატაო.	</h3>
+        <form name="myform" onsubmit="validateForm()" method="post">
+          <input type="text" id="input" name="pasuxi" value="" placeholder="პასუხი"><br>
+          <button type="button" class="btn" onclick="validateForm()" name="button">შემდეგი</button>
+        </form><br>
+      </div>
+    </div>
+    <script>
+    function validateForm() {
+      var x = document.forms["myform"]["pasuxi"].value;
+      if (x == "") {
+        alert("გთხოვთ შეავსოთ ველი")
+      }else if (x == "კურდღელი") {
+        window.location.href = "page8.html";
+      }
+    }
+    </script>
+  </body>
+  </html>
